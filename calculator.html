@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My Calculator </title>
+    <link rel="stylesheet" type="text/css" href="calculatorstylesheet.css">
+    <script defer src="calculatorscript.js"></script>
+</head>
+<body>
+    <div id="calc">
+        <form>
+            <div class="display"> 0
+            <!-- <input type="text" id="answer" readonly /> -->
+            </div>
+
+            <div class="keys">
+                <button class="operator" data-action="clear">C</button>
+                <button class="operator"onclick="Backspace()">←</button>
+                <button class="operator"onclick="Solve('%')">%</button>
+                <button class="operator" data-action="divide">/</button>
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+
+                <button class="operator" data-action="multiply">x</button>
+
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+
+                <button class="operator" data-action="subtract">-</button>
+
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+
+                <button class="operator" data-action="add">+</button>
+
+                <button>00</button>
+                <button>0</button>
+                <button data-action="decimal">.</button>
+                <button class="operator-equal" data-action="calculate">=</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
